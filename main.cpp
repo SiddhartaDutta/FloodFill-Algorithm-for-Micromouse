@@ -1,6 +1,8 @@
 #include <iostream>
 #include <queue>
 
+using namespace std;
+
 // ONLY EDIT THIS LINE (LINE 6)
 // Dimension of square maze
 const int mazeDimension = 16;
@@ -15,7 +17,20 @@ void initMaze(){
   }
 }
 
-/*
+void printMaze(){
+
+    for(int y = 0; y < mazeDimension; y++){
+        for(int x = 0; x < mazeDimension; x++){
+            cout << maze[x][y] << " ";
+        }
+        cout << endl;
+    }
+
+}
+
+/* 
+
+    --- Maze array diagram ---
 
 x   |0|1|2|3|...
     |1|
@@ -34,10 +49,13 @@ void fillMaze(){
     int fillValLimit = fillVal/2;
 
     for(int x = 0; i < mazeDimension; x++){
+        //if(x < )
         for(int y = 0; y < mazeDimension; y++){
             
         }
     }
+
+    
 }
 
 int main(){
