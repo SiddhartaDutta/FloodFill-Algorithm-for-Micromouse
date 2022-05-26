@@ -48,10 +48,10 @@ void fillMaze(){
     int fillVal = mazeDimension - 2;
     int fillValLimit = fillVal/2;
 
-    for(int x = 0; i < mazeDimension; x++){
+    for(int x = 0; x < mazeDimension; x++){
         //if(x < )
         for(int y = 0; y < mazeDimension; y++){
-            
+            maze[x][y] = 1;
         }
     }
 
@@ -60,7 +60,9 @@ void fillMaze(){
 
 int main(){
 
-    
+    initMaze();
+    fillMaze();
+    printMaze();
 
     return 0;
 }
