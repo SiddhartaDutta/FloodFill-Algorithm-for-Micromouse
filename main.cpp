@@ -5,7 +5,7 @@ using namespace std;
 
 // ONLY EDIT THIS LINE (LINE 6)
 // Dimension of square maze
-const int mazeDimension = 16;
+const int mazeDimension = 32;
 
 // Create maze array
 int* maze[mazeDimension];
@@ -47,8 +47,6 @@ void fillMaze(){
     // for 16x16, 7 & 8
     int fillVal = mazeDimension - 2;
     int fillValCopy = fillVal;
-
-    cout << fillVal/2 + 1 << endl;
 
     for(int x = 0; x < mazeDimension; x++){
         if(x < fillVal/2 + 1 && x != 0){
